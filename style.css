@@ -101,24 +101,23 @@ body {
 .skills-section .row {
   text-align: left;
 }
-.skill-div {
+.skill-card {
   background: linear-gradient(120deg, #e3eafc 60%, #b6c7e6 100%);
-  box-shadow: 0 4px 16px rgba(26,35,126,0.10);
-  border-radius: 16px;
-  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-  cursor: pointer;
-  min-height: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  align-items: center;
+  height: 180px;
+  color: #222;
 }
-.skill-div:hover {
-  background: linear-gradient(120deg, #283593 60%, #FFD600 100%);
-  color: #fff;
-  transform: translateY(-8px) scale(1.04);
-  box-shadow: 0 12px 40px rgba(26,35,126,0.18);
+.skill-div {
+  width: 23%;
+  height: 180px;
+  margin: 1%;
+  display: inline-block;
+  vertical-align: top;
 }
 .portfolio-link-btn {
   background: #ff9800 !important;
@@ -256,24 +255,14 @@ body.dark-mode .project-card, body.dark-mode .skill-div {
   background: linear-gradient(120deg, #232946 60%, #181A20 100%) !important;
   color: #f5f7fa !important;
 }
-/* ...existing code... */
 body.dark-mode .skill-div {
   background: linear-gradient(120deg, #232946 60%, #181A20 100%) !important;
   color: #f5f7fa !important;
 }
-/* Add this new rule to make text black in skills section for dark mode */
 body.dark-mode .skill-div h6,
 body.dark-mode .skill-div p {
   color: #222 !important;
 }
-body.dark-mode .skill-div:hover {
-  background: linear-gradient(120deg, #FFD600 60%, #232946 100%) !important;
-  color: #181A20 !important;
-}
-body.dark-mode .skill-div:hover h5, body.dark-mode .skill-div:hover p {
-  color: #181A20 !important;
-}
-/* ...existing code... */
 body.dark-mode .project-card:hover, body.dark-mode .skill-div:hover {
   background: linear-gradient(120deg, #FFD600 60%, #232946 100%) !important;
   color: #181A20 !important;
