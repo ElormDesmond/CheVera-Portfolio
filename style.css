@@ -256,6 +256,24 @@ body.dark-mode .project-card, body.dark-mode .skill-div {
   background: linear-gradient(120deg, #232946 60%, #181A20 100%) !important;
   color: #f5f7fa !important;
 }
+/* ...existing code... */
+body.dark-mode .skill-div {
+  background: linear-gradient(120deg, #232946 60%, #181A20 100%) !important;
+  color: #f5f7fa !important;
+}
+/* Add this new rule to make text black in skills section for dark mode */
+body.dark-mode .skill-div h6,
+body.dark-mode .skill-div p {
+  color: #222 !important;
+}
+body.dark-mode .skill-div:hover {
+  background: linear-gradient(120deg, #FFD600 60%, #232946 100%) !important;
+  color: #181A20 !important;
+}
+body.dark-mode .skill-div:hover h5, body.dark-mode .skill-div:hover p {
+  color: #181A20 !important;
+}
+/* ...existing code... */
 body.dark-mode .project-card:hover, body.dark-mode .skill-div:hover {
   background: linear-gradient(120deg, #FFD600 60%, #232946 100%) !important;
   color: #181A20 !important;
