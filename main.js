@@ -152,10 +152,10 @@ const skills = [
 const skillsRow = document.getElementById('skills-row');
 skills.forEach(skill => {
   const col = document.createElement('div');
-  // Fixed width and height for 4 cards per row
-  col.style.cssText = 'width: 23%; height: 180px; margin: 1%; display: inline-block; vertical-align: top;';
+  // Remove inline styles and use CSS classes
+  col.className = 'col-12 col-sm-6 col-md-4 col-lg-3 mb-4 skill-div';
   col.innerHTML = `
-    <div class="text-center p-3 h-100 w-100" style="background: linear-gradient(120deg, #e3eafc 60%, #b6c7e6 100%); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div class="skill-card text-center p-3 h-100 w-100">
       <i class="fas ${skill.icon} fa-2x mb-2 text-primary"></i>
       <h6 class="mb-1">${skill.title}</h6>
       <p class="mb-0 small">${skill.desc}</p>
