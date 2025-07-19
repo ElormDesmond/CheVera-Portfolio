@@ -1,0 +1,286 @@
+/* Basic and custom styles for CheVera Portfolio */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #cfd8e3 60%, #b6c7e6 100%);
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background: #fff;
+  color: #FFD600;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+  cursor: pointer;
+}
+.company-logo-lg {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(26,35,126,0.10);
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+.company-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #283593;
+  margin-bottom: 0.5rem;
+}
+.hero-section {
+  min-height: 40vh;
+  padding-top: 3rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background: linear-gradient(120deg, #cfd8e3 60%, #b6c7e6 100%);
+}
+.about-section h2,
+.project-gallery h2,
+.skills-section h2,
+.portfolio-link-section h2 {
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #FFD600;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+.about-section,
+.project-gallery,
+.skills-section {
+  text-align: initial;
+}
+.project-card {
+  background: linear-gradient(120deg, #e0e3f7 60%, #b6c7e6 100%);
+  box-shadow: 0 4px 16px rgba(26,35,126,0.10);
+  border-radius: 16px;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  cursor: pointer;
+  min-height: 420px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-card:hover {
+  background: linear-gradient(120deg, #004080 60%, #ffb300 100%);
+  color: #fff;
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 40px rgba(26,35,126,0.18);
+}
+.project-card .card-title,
+.project-card .card-text {
+  text-align: center;
+}
+.view-details-btn {
+  background: #ff9800;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1.5em;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+.view-details-btn:hover {
+  background: #222;
+  color: #ff9800;
+  text-decoration: none;
+}
+.skills-section .row {
+  text-align: left;
+}
+.skill-div {
+  background: linear-gradient(120deg, #e3eafc 60%, #b6c7e6 100%);
+  box-shadow: 0 4px 16px rgba(26,35,126,0.10);
+  border-radius: 16px;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  cursor: pointer;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.skill-div:hover {
+  background: linear-gradient(120deg, #283593 60%, #FFD600 100%);
+  color: #fff;
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 40px rgba(26,35,126,0.18);
+}
+.portfolio-link-btn {
+  background: #ff9800 !important;
+  color: #222 !important;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7em 2em;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: background 0.3s, color 0.3s;
+  text-decoration: none !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.portfolio-link-btn:hover {
+  background: #222 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.footer {
+  background: linear-gradient(120deg, #283593 60%, #2c387e 100%);
+  color: #FFD600;
+  padding: 2rem 0 1rem 0;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+.footer a {
+  color: #FFD600;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+/* Modal styles */
+#modal-root, .project-modal-overlay, .preview-modal-overlay {
+  z-index: 2000;
+}
+.project-modal-overlay, .preview-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(26,35,126,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-modal, .preview-modal {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(26,35,126,0.18);
+  padding: 2rem 2.5rem;
+  min-width: 340px;
+  max-width: 480px;
+  text-align: center;
+  position: relative;
+}
+.close-modal-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #ff9800;
+  color: #222;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.close-modal-btn:hover {
+  background: #222;
+  color: #ff9800;
+}
+.modal-images {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.modal-img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+  cursor: pointer;
+}
+.preview-img {
+  width: 320px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(26,35,126,0.12);
+  margin-top: 1rem;
+}
+@media (max-width: 576px) {
+  .project-modal, .preview-modal {
+    padding: 1rem;
+    min-width: 90vw;
+    max-width: 98vw;
+  }
+  .modal-img {
+    width: 90px;
+    height: 60px;
+  }
+  .preview-img {
+    width: 90vw;
+    height: 60vw;
+  }
+}
+/* Dark mode styles */
+body.dark-mode {
+  background: #181A20 !important;
+  color: #f5f7fa !important;
+}
+body.dark-mode .hero-section {
+  background: linear-gradient(120deg, #232946 60%, #181A20 100%) !important;
+}
+body.dark-mode .about-section {
+  background: linear-gradient(120deg, #181A20 60%, #232946 100%) !important;
+}
+body.dark-mode .project-gallery {
+  background: linear-gradient(120deg, #232946 60%, #181A20 100%) !important;
+}
+body.dark-mode .skills-section {
+  background: linear-gradient(120deg, #181A20 60%, #232946 100%) !important;
+}
+body.dark-mode .footer {
+  background: linear-gradient(120deg, #232946 60%, #181A20 100%) !important;
+  color: #FFD600 !important;
+}
+body.dark-mode .project-card, body.dark-mode .skill-div {
+  background: linear-gradient(120deg, #232946 60%, #181A20 100%) !important;
+  color: #f5f7fa !important;
+}
+body.dark-mode .project-card:hover, body.dark-mode .skill-div:hover {
+  background: linear-gradient(120deg, #FFD600 60%, #232946 100%) !important;
+  color: #181A20 !important;
+}
+body.dark-mode .project-card:hover h5, body.dark-mode .project-card:hover p,
+body.dark-mode .skill-div:hover h5, body.dark-mode .skill-div:hover p {
+  color: #181A20 !important;
+}
+body.dark-mode .view-details-btn {
+  background: #FFD600 !important;
+  color: #181A20 !important;
+}
+body.dark-mode .view-details-btn:hover {
+  background: #181A20 !important;
+  color: #FFD600 !important;
+}
+body.dark-mode .portfolio-link-btn {
+  background: #fff !important;
+  color: #222 !important;
+}
+body.dark-mode .portfolio-link-btn:hover {
+  background: #ff9800 !important;
+  color: #fff !important;
+}
+body.dark-mode .theme-toggle {
+  background: #232946 !important;
+  color: #FFD600 !important;
+}

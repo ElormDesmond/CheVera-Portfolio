@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheVera Company Limited Portfolio</title>
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">
+    <i class="fas fa-sun"></i>
+  </button>
+
+  <!-- Hero Section -->
+  <section class="hero-section d-flex flex-column align-items-center justify-content-center">
+    <div class="hero-content text-center">
+      <img src="assets/logo.jpg" alt="CheVera Company Limited Logo" class="company-logo-lg mb-3" />
+      <h1 class="company-title display-4 mb-2">CheVera Company Limited</h1>
+      <button class="cta-btn mt-3 btn btn-primary">View Projects</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section container">
+    <h2 style="text-align:left">About Us</h2>
+    <p style="text-align:left">
+      CheVera Company Limited is a trusted construction partner based in Kasoa, Central Region, Ghana. Our company is built on a foundation of integrity, reliability, and a commitment to excellence.
+    </p>
+    <p style="text-align:left">
+      We believe in delivering every project with the highest standards, ensuring our clients’ happiness and satisfaction. Our reputation is shaped by our values, attention to detail, and the positive feedback we receive from those we serve. At CheVera, we value transparency, strong relationships, and always put our clients first.
+    </p>
+    <p style="text-align:left">
+      Your vision is our mission. We take pride in turning ideas into reality, maintaining open communication, and exceeding expectations at every step. Experience construction with a difference—where your needs, feedback, and happiness truly matter.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="project-gallery container" id="project-gallery-section">
+    <h2 style="text-align:center">Our 3D Design Projects</h2>
+    <div class="row justify-content-center gx-4 gy-4" id="projects-row">
+      <!-- Project cards will be injected by JS -->
+    </div>
+  </section>
+
+  <!-- On-site Work Projects Section -->
+  <section class="onsite-work container" id="onsite-work-section" style="margin-top: 4rem;">
+    <h2 style="text-align:left; border-bottom: 2px solid #FFD600; display: inline-block; padding-bottom: 0.5rem; margin-bottom: 1rem;">On-site Work Projects</h2>
+    <p style="text-align:left; margin-bottom: 2rem; color: #666; font-style: italic;">Bringing our 3D designs to life with precision, quality, and excellence - exactly as envisioned</p>
+    <div class="row justify-content-left gx-4 gy-4" id="onsite-projects-row">
+      <!-- On-site project cards will be injected by JS -->
+    </div>
+  </section>
+
+  <!-- Portfolio Link Section -->
+  <section class="portfolio-link-section container" style="margin-top: 3rem; margin-bottom: 3rem;">
+    <h2 class="mb-3" style="margin-bottom: 1.5rem; border-bottom: 2px solid #FFD600; display: inline-block; padding-bottom: 0.5rem; text-align: left;">Explore Our Full Portfolio</h2>
+    <p class="mb-4" style="margin-bottom: 2rem; text-align: left;">Discover a comprehensive showcase of our residential, commercial, religious, and ongoing construction projects. For more detailed galleries and additional works, click below to view our full portfolio on Google Drive.</p>
+    <a href="https://drive.google.com/drive/folders/1k0RysegrqHGY8uGRkV1NaLthE-2VI_1e?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-lg portfolio-link-btn">
+      <i class="fas fa-folder-open me-2"></i> Click Here to View Full Portfolio
+    </a>
+  </section>
+
+  <!-- Skills & Services Section -->
+  <section class="skills-section container">
+    <h2 style="text-align:left">Our Skills & Services</h2>
+    <div class="row justify-content-center gx-4 gy-4" id="skills-row">
+      <!-- Skills cards will be injected by JS as 4 per row -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="footer-branding">
+      CheVera Company Limited &copy; <span id="footer-year"></span>
+    </div>
+    <br />
+    <div class="footer-contact mt-2">
+      Tel: <a href="tel:0244202241" style="color: #FFD600; text-decoration: none;">0244202241</a> &nbsp;|&nbsp;
+      <a href="https://wa.me/233244202241" target="_blank" rel="noopener noreferrer" style="color: #FFD600; text-decoration: none;">WhatsApp</a>
+      <br />
+      Email: <a href="mailto:Cheveraconsult@gmail.com" style="color: #FFD600; text-decoration: none;">Cheveraconsult@gmail.com</a>
+    </div>
+    <div class="footer-social">
+      <!-- Social media icons/links will go here -->
+    </div>
+  </footer>
+
+  <!-- Modals will be injected by JS -->
+  <div id="modal-root"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
